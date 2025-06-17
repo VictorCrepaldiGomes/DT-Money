@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Header } from "../../Components/Header/Header";
 import { SearchForm } from "../../Components/SearchForm/SearchForm.tsx";
 import { Summary } from "../../Components/Summary/Summary";
@@ -7,32 +8,11 @@ import {
   TransactionsTable,
   PriceHighlight,
 } from "./Styles.tsx";
+import { TransactionsContext } from "../../Contexts/TransactionsContext.tsx";
 
-interface Transactions {
-    id: number;
-    description: string;
-    type: 'income' | 'outcome';
-    price: number;
-    category: string;
-    createdAt: string;
-}
 
 export function Transactions() {
-
-    const [transactions, setTransactions] = useState<Transactions[]>([])
-
-    async function loadTransactions() {
-        const response = await fetch('http://localhost:3333/transactions')
-        const data = await response.json()
-
-        setTransactions(data);
-        
-    }
-
-    useEffect(() => {
-        loadTransactions()
-    }, [])
-
+const { transactions } = useContext(TransactionsContext)
 
   //Dentro do UseEffect nao pode ser async await
 //   useEffect(() => {
