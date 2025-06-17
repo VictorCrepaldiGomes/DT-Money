@@ -24,7 +24,6 @@ const { transactions } = useContext(TransactionsContext)
 //     })
 //   }, [])
 
-
   return (
     <div>
       <Header />

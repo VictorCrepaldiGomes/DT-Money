@@ -57,7 +57,12 @@ form {
         margin-top: 1.5rem;
         cursor: pointer;
 
-        &:hover {
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        &:not(:disabled):hover {
             background-color: ${props => props.theme.colors.green800};
         }
 
