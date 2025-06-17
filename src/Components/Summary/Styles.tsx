@@ -36,7 +36,7 @@ padding: 2rem;
  }
 
  ${props => props.variant === 'color' && css`
- background-color: ${props => props.theme.colors.green700};
+ background-color: ${props => props.theme.colors.green900};
  
  `}
 `
