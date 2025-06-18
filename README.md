@@ -1,8 +1,8 @@
-# DT Money 💸
+# DT Money 
 
 Aplicação de controle financeiro construída durante o curso da Rocketseat — trilha ReactJS do Ignite.
 
-## ✨ Funcionalidades
+## Funcionalidades
 
 - Cadastro de transações (entrada e saída)
 - Filtro e busca de transações por descrição
@@ -12,7 +12,7 @@ Aplicação de controle financeiro construída durante o curso da Rocketseat —
 
 ---
 
-## 🚀 Tecnologias utilizadas
+## Tecnologias utilizadas
 
 - [React](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
@@ -26,14 +26,14 @@ Aplicação de controle financeiro construída durante o curso da Rocketseat —
 
 ---
 
-## 📦 Requisitos
+## Requisitos
 
 - [Node.js](https://nodejs.org/) instalado
 - [Git](https://git-scm.com/)
 
 ---
 
-## 📥 Como clonar e iniciar o projeto
+## Como clonar e iniciar o projeto
 
 ```bash
 # Clone o repositório
