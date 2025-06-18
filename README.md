@@ -1,54 +1,78 @@
-# React + TypeScript + Vite
+# DT Money 💸
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação de controle financeiro construída durante o curso da Rocketseat — trilha ReactJS do Ignite.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Cadastro de transações (entrada e saída)
+- Filtro e busca de transações por descrição
+- Listagem de transações com valor formatado
+- Armazenamento em JSON Server simulado como backend
+- Estilização com styled-components e tema dark
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Tecnologias utilizadas
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Styled-components](https://styled-components.com/)
+- [Axios](https://axios-http.com/)
+- [Zod](https://github.com/colinhacks/zod)
+- [React Hook Form](https://react-hook-form.com/)
+- [Radix UI](https://www.radix-ui.com/)
+- [JSON Server](https://github.com/typicode/json-server)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📦 Requisitos
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- [Node.js](https://nodejs.org/) instalado
+- [Git](https://git-scm.com/)
+
+---
+
+## 📥 Como clonar e iniciar o projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/VictorCrepaldiGomes/DT-Money.git
+
+# Acesse a pasta do projeto
+cd DT-Money
+
+# Instale as dependências
+npm install
+
+# Inicie o JSON Server
+npm run dev:server
+
+# Inicie a aplicação web
+npm run dev
+
+# Inicia o frontend
+npm run dev
+
+# Inicia o backend fake (JSON Server)
+npm run dev:server
+
+DT-Money/
+├── src/
+│   ├── components/
+│   ├── contexts/
+│   ├── pages/
+│   ├── reducers/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── server.json
+├── vite.config.ts
+└── README.md
+
+
+
+
+
+
+
